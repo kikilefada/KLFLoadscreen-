@@ -7,7 +7,7 @@ files {
     'main.js',
     
     'img/LOGO.png',
-    'background.png',
+    'img/background.png',
 
 }
 
