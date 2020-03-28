@@ -14,41 +14,70 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="style.css" rel="stylesheet" media="screen">
-           
+            <link href="news.css" rel="stylesheet" media="screen">
+          
+          
             <!--Beta vertical --> 
             <div class="box vertical">
                 <h6>BETA VERSION</h6>
                 </div> 
           </head>
-
-
           <body>
-             <!--Logo-->  
-            <a href="">
-                <img src="img/LOGO.png" alt="Prophecy Roleplay france" class="logo" href="#"/>
+          
+
+            <!--Logo-->  
+                <a href="">
+                <img src="img/LOGO.png" alt="Prophecy Roleplay france" class="logo"/>
                 </a>
 
+                  <div class="container2">
+                   <div class="dot dot-1"></div>
+                   <div class="dot dot-2"></div>
+                   <div class="dot dot-3"></div>
+                  </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <defs>
+             <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+              </filter>
+            </defs>
+            </svg>
+
                 <!--Audio à venir en attente de prod-->
-
+            <div id="audio">
+              <audio controls loop autoplay hidden>
+                <source src="music.ogg" type="audio/ogg">
+              </audio>
+            
                 
-                <!--Loader + Texte patientez-->
-                <div class="p">
-                  <p>Veuillez patienter...</p>
-                  </div> 
-                
-                <div class="loadbar">
-                  <div class="progressBar"></div>
-                </div>              
-                <script src="main.js"></script>            
-          </body>
-
+          
+                <script src="main.js"></script>    
+           </body>
+               
           <footer>
+            <div id="breaking-news-container">
+              <div id="breaking-news-colour" class="slideup animated">
+            
+              </div>
+              <span class="breaking-news-title delay-animated slidein">
+                // INFORMATIONS//
+              </span>
+              <a class="breaking-news-headline delay-animated2 fadein marquee">
+                Vous allez rentrer en phase alpha du serveur || Merci de prendre attention aux moindre details qui pourrait nuire a votre jeu de role! nous ferons tout notre pouvoir pour combler ce probleme !
+            </div>
+          
+
             <!--Information défilantes-->
-            <div class="defileParent">
+            <!--<div class="defileParent">
                 <span class="defile" data-text=" Le serveur à fusionné avec une autre communautée le 16 mars 2020 avec une toute nouvelle machine &emsp;
                 Nous passons donc en Bêta Ouverte Version. 1.0.1 "> 
                 </span>
-            </div>
+            </div>-->
+
+           
           </footer>
+
                  
     </html>

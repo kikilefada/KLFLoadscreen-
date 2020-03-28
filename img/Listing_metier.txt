@@ -1,0 +1,17 @@
+Cher collègues voici un petit listing des métier regroupant les noms, leurs grades ainsi que la commande a utilisé afin de se mettre le job.
+Si vous suiviez bien ce magnifique tutoriel de mamie Agathe tous se passera pour le mieux.
+
+Votre chère developpeur
+
+
+police 0 a 6 (actuellement 4) : /setjob votre Id police le numero de grande
+ambulance 0 a 2
+cardealer 0 a 3
+mechanic 0 a 4 
+banquier 0 a 3
+unicorn 0 a 3
+ammunation 0 a 3
+pompiste 0 a 3
+taxi 0 a 4
+vigne 0 a 3
+bikedealer 0 a 3
