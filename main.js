@@ -24,3 +24,16 @@ const  handler = {
 window.addEventListener("message", function(e) {
     (handler[e.data.eventName] || function () {})(e.data)
 })
+
+var song;
+
+function setup() {
+    createCanvas(200, 200);
+    song = loadSound('music.ogg', loaded);
+    song.setVolume(0.5);
+
+}
+
+function loaded() {
+    song.play();
+}

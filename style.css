@@ -1,12 +1,11 @@
 /* [BACKGROUND IMAGES] */
   html,body {
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     background-image:url(img/background.png);
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: initial;
   }
 
   .logo {
@@ -67,12 +66,12 @@
 /* [FOOTER / INFOS] */
 
  footer {
-  position:absolute;
+  position: absolute;;
   bottom:0;
   width:100%;
-  justify-content: center;
-  color: #fff;
-    }
+  margin-top: 35em;
+
+  }
 
 /* [TEXTE DEFILANT] */
 
@@ -138,11 +137,11 @@
 
 .defile {
 	display:block;
-	-webkit-animation:linear marqueelike 15s infinite ;
-	-moz-animation:linear marqueelike 15s infinite ;
-	-o-animation:linear marqueelike 15s infinite ;
-	-ms-animation:linear marqueelike 15s infinite ;
-	animation:linear marqueelike 15s infinite ;
+	-webkit-animation:linear marqueelike 50s infinite ;
+	-moz-animation:linear marqueelike 50s infinite ;
+	-o-animation:linear marqueelike 50s infinite ;
+	-ms-animation:linear marqueelike 50s infinite ;
+	animation:linear marqueelike 50s infinite ;
 	margin-left:-100%;
 	padding:0 5px;
 	text-align:left;
@@ -150,37 +149,82 @@
 }
 }
 
-/** [LOADBAR] **/
-
-.loadbar{
-  width: 20%;
-  background-color:transparent;
-  height: 15px;
 
 
-  overflow: hidden;
-  position: relative;
-  left: 42%;
-  bottom: 30%;
-  top: 10%;
-  display: block;
+/** [LOADER ANIME COULEURS] **/
 
-
-  border-top-left-radius: 10px;  
-  border-bottom-right-radius: 10px; 
-  border-bottom-left-radius: 10px; 
-  border-top-right-radius: 10px; 
-
+.container2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 62%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  filter: url('#goo');
+  animation: rotate-move 5s ease-in-out infinite;
 
 }
 
-.progressBar{
-
-  width: 5%;
-  background-color: goldenrod;
-  height: 20px;
+.dot { 
+  width: 40px;
+  height: 40px;
+  border-radius: 5%;
   position: absolute;
-  left: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
+.dot-3 {
+  background-color: #e21d1d;
+  animation: dot-3-move 2s ease infinite, index 6s ease infinite;
+}
 
+.dot-2 {
+  background-color: #5d0be0;
+  animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
+}
+
+.dot-1 {
+  background-color: #ada208;
+  animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
+}
+
+@keyframes dot-3-move {
+  20% {transform: scale(1)}
+  45% {transform: translateY(-18px) scale(.45)}
+  60% {transform: translateY(-90px) scale(.45)}
+  80% {transform: translateY(-90px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-2-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(-16px, 12px) scale(.45)}
+  60% {transform: translate(-80px, 60px) scale(.45)}
+  80% {transform: translate(-80px, 60px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes dot-1-move {
+  20% {transform: scale(1)}
+  45% {transform: translate(16px, 12px) scale(.45)}
+  60% {transform: translate(80px, 60px) scale(.45)}
+  80% {transform: translate(80px, 60px) scale(.45)}
+  100% {transform: translateY(0px) scale(1)}
+}
+
+@keyframes rotate-move {
+  55% {transform: translate(-50%, -50%) rotate(0deg)}
+  80% {transform: translate(-50%, -50%) rotate(360deg)}
+  100% {transform: translate(-50%, -50%) rotate(360deg)}
+}
+
+@keyframes index {
+  0%, 100% {z-index: 3}
+  33.3% {z-index: 2}
+  66.6% {z-index: 1}
 }

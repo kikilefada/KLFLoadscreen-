@@ -9,6 +9,8 @@ files {
     'img/LOGO.png',
     'img/background.png',
 
+    'music.ogg'
+
 }
 
 loadscreen 'index.html'
